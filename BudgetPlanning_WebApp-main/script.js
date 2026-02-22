@@ -75,8 +75,8 @@ function renderTransactions() {
       <td>${new Date(tx.date).toLocaleDateString()}</td>
       <td>${tx.description}</td>
       <td>${tx.type}</td>
-      <td>₱${tx.amount.toFixed(2)}</td>
-      <td><button class="delete-btn" onclick="deleteTransaction('₱{tx.date}')">Delete</button></td>`;
+      <td>${tx.amount.toFixed(2)}</td>
+      <td><button class="delete-btn" onclick="deleteTransaction('${tx.date}')">Delete</button></td>`;
     tbody.appendChild(tr);
   });
 
